@@ -11,18 +11,31 @@ puts lines[1]
 # 3. How many ways can we return 'Princes Street' from the array?
 puts lines[4]
 puts lines.last
+puts lines[-1]
+puts lines.at(4)
+puts lines.fetch(4)
 
 # 4. Work out the index position of 'Haymarket'
+puts lines.index("Haymarket")
 
 # 5. Add 'Airport' to the start of the array
+lines.unshift("Airport")
+#puts lines
 
 # 6. Add 'York Place' to the end of the array
+lines.push("York Place")
+#puts lines
 
 # 7. Remove 'Edinburgh Park' from the array using it's name
+#lines.delete("Edinburgh Park")
+#puts lines
 
 # 8. Delete 'Edinburgh Park' from the array by index
+lines.delete_at(2) #moved from index 1 to index 2 by unshifting Airport
+puts lines
 
 # 9. Reverse the positions of the stops in the array
+puts lines.reverse
 
 ### B. Given the following data structure:
 
